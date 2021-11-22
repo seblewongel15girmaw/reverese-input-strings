@@ -16,3 +16,23 @@ public class Program
 		
 	}
 }
+# Create a program that takes the loan amount as input, calculates and outputs the remaining amount after 3 months. 
+import java.util.Scanner;
+
+public class Program
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int amount = scanner.nextInt();
+		//your code goes here
+		double remaining=0;
+		for(int i=0;i<3;i++){
+		  remaining=amount-(0.1*amount);
+			amount=(int)remaining;
+			
+
+		}
+		System.out.println(amount);
+		
+	}
+}
